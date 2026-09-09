@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Kumar S | Copywriter & Creative Strategist</title>
+    <meta name="description" content="I turn blank pages into bold ideas. Copywriter specializing in quirky concepts, campaigns, and conversion-driven copy.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#E2FF00', // Electric Yellow/Green for high contrast
+                            dark: '#0A0A0A',
+                            gray: '#1A1A1A',
+                            light: '#F4F4F5'
+                        }
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0A0A0A; color: #F4F4F5; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .text-stroke { -webkit-text-stroke: 1px rgba(255,255,255,0.2); color: transparent; }
+        .hover-card:hover { transform: translateY(-5px); border-color: #E2FF00; }
+        .marquee-container { overflow: hidden; white-space: nowrap; }
+        .marquee-content { display: inline-block; animation: marquee 20s linear infinite; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-display font-bold text-xl tracking-tight">Manish Kumar S<span class="text-brand">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+                <a href="#work" class="hover:text-brand transition-colors">Work</a>
+                <a href="#services" class="hover:text-brand transition-colors">Services</a>
+                <a href="#about" class="hover:text-brand transition-colors">About</a>
+            </div>
+            <a href="#contact" class="bg-brand text-brand-dark px-5 py-2 rounded-full font-semibold text-sm hover:bg-white transition-colors">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand/5 rounded-full blur-3xl"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <p class="text-brand font-medium mb-4 tracking-widest uppercase text-sm reveal">Available for Freelance & Full-time</p>
+            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6 reveal" style="transition-delay: 100ms;">
+                Words that work.<br>
+                <span class="text-stroke">Ideas that stick.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 reveal" style="transition-delay: 200ms;">
+                I’m Manish, a copywriter obsessed with quirky concepts and creative ideas. From smartwatch launches to spec ads for Bumble, I craft copy that doesn’t just sound good—it converts.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal" style="transition-delay: 300ms;">
+                <a href="#work" class="bg-brand text-brand-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all transform hover:scale-105">View My Work</a>
+                <a href="#contact" class="border border-white/20 px-8 py-4 rounded-full font-bold text-lg hover:border-brand hover:text-brand transition-all">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee / Social Proof -->
+    <div class="border-y border-white/10 bg-brand-gray py-6 marquee-container">
+        <div class="marquee-content font-display text-2xl md:text-3xl font-bold text-gray-500 uppercase tracking-wider">
+            Trivitron &nbsp;•&nbsp; Nippon Paints &nbsp;•&nbsp; Adwants &nbsp;•&nbsp; AAA Advertising &nbsp;•&nbsp; Pixel Studios &nbsp;•&nbsp; P N RAO &nbsp;•&nbsp; JKR Resort & Spa &nbsp;•&nbsp; VRX Fete &nbsp;•&nbsp; 
+            Trivitron &nbsp;•&nbsp; Nippon Paints &nbsp;•&nbsp; Adwants &nbsp;•&nbsp; AAA Advertising &nbsp;•&nbsp; Pixel Studios &nbsp;•&nbsp; P N RAO &nbsp;•&nbsp; JKR Resort & Spa &nbsp;•&nbsp; VRX Fete &nbsp;•&nbsp;
+        </div>
+    </div>
+
+    <!-- Selected Work -->
+    <section id="work" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+            <div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Selected Work</h2>
+                <p class="text-gray-400 max-w-md">A mix of campaigns, landing pages, and spec ads where strategy met quirky creativity.</p>
+            </div>
+            <a href="https://www.behance.net/manishkumar5695" target="_blank" class="text-brand font-medium hover:underline mt-4 md:mt-0">View full Behance portfolio →</a>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <a href="https://www.behance.net/manishkumar5695" target="_blank" class="group block bg-brand-gray border border-white/10 rounded-2xl p-8 hover-card transition-all duration-300 reveal">
+                <div class="flex justify-between items-start mb-6">
+                    <span class="bg-white/5 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Campaign</span>
+                    <span class="text-gray-500 group-hover:text-brand transition-colors">↗</span>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3 group-hover:text-brand transition-colors">Trivitron Women's Day Campaign</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Conceptualized and wrote compelling copy for a brand-wide Women's Day campaign, balancing emotional resonance with brand messaging.</p>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://www.behance.net/manishkumar5695" target="_blank" class="group block bg-brand-gray border border-white/10 rounded-2xl p-8 hover-card transition-all duration-300 reveal" style="transition-delay: 100ms;">
+                <div class="flex justify-between items-start mb-6">
+                    <span class="bg-white/5 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Web Copy</span>
+                    <span class="text-gray-500 group-hover:text-brand transition-colors">↗</span>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3 group-hover:text-brand transition-colors">Inbase Smart Watch Banners</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Punchy, conversion-focused website banners and landing page copy designed to highlight tech features in a human, relatable way.</p>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://www.behance.net/manishkumar5695" target="_blank" class="group block bg-brand-gray border border-white/10 rounded-2xl p-8 hover-card transition-all duration-300 reveal">
+                <div class="flex justify-between items-start mb-6">
+                    <span class="bg-white/5 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Spec Ad</span>
+                    <span class="text-gray-500 group-hover:text-brand transition-colors">↗</span>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3 group-hover:text-brand transition-colors">Bumble & Biryani Spec Ads</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Quirky, out-of-the-box speculative ad campaigns showcasing brand voice adaptability, humor, and cultural relevance.</p>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://www.behance.net/manishkumar5695" target="_blank" class="group block bg-brand-gray border border-white/10 rounded-2xl p-8 hover-card transition-all duration-300 reveal" style="transition-delay: 100ms;">
+                <div class="flex justify-between items-start mb-6">
+                    <span class="bg-white/5 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Email & Social</span>
+                    <span class="text-gray-500 group-hover:text-brand transition-colors">↗</span>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3 group-hover:text-brand transition-colors">Nippon Paints & JKR Resort</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">End-to-end social media calendars and high-converting email copy sequences that drive engagement and bookings.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-6 bg-brand-gray border-y border-white/10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-12 text-center reveal">What I Bring to the Table</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 reveal">
+                    <div class="w-12 h-12 bg-brand/10 rounded-full flex items-center justify-center text-brand text-2xl mb-4">✍️</div>
+                    <h3 class="font-display text-xl font-bold mb-3">Brand & Campaign Copy</h3>
+                    <p class="text-gray-400 text-sm">From taglines to 360° campaign concepts, I build cohesive brand voices that stand out in crowded markets.</p>
+                </div>
+                <div class="p-6 reveal" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-brand/10 rounded-full flex items-center justify-center text-brand text-2xl mb-4">🎯</div>
+                    <h3 class="font-display text-xl font-bold mb-3">Landing Pages & Web</h3>
+                    <p class="text-gray-400 text-sm">Conversion-optimized website copy that guides users seamlessly from the first headline to the final CTA.</p>
+                </div>
+                <div class="p-6 reveal" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-brand/10 rounded-full flex items-center justify-center text-brand text-2xl mb-4">📱</div>
+                    <h3 class="font-display text-xl font-bold mb-3">Social & Email Sequences</h3>
+                    <p class="text-gray-400 text-sm">Engaging social media calendars and email copies that nurture leads and build genuine community interaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <div class="reveal">
+            <h2 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-8">
+                "I believe I have come a long way in writing, especially from <span class="text-gray-500 line-through">"copies"</span> to <span class="text-brand">"copy"</span>."
+            </h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                I’m an avid reader and learner of art in general. My journey includes roles as a Senior Copywriter at AAA Advertising and Jr Copywriter at Pixel Studios. I don’t just write words; I engineer them to solve business problems while keeping the creative spark alive.
+            </p>
+            <div class="flex justify-center gap-4 text-sm font-medium text-gray-500">
+                <span>📍 Based in India</span>
+                <span>•</span>
+                <span>🌍 Working Globally</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6 bg-brand text-brand-dark">
+        <div class="max-w-3xl mx-auto text-center reveal">
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">Got a blank page?</h2>
+            <p class="text-lg md:text-xl font-medium mb-10 opacity-80">Let’s fill it with something brilliant. I’m currently available for freelance projects and full-time roles.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="mailto:your.email@example.com" class="bg-brand-dark text-brand px-8 py-4 rounded-full font-bold text-lg hover:bg-black transition-all transform hover:scale-105 w-full sm:w-auto">
+                    Email Me Directly
+                </a>
+                <a href="https://www.behance.net/manishkumar5695" target="_blank" class="bg-transparent border-2 border-brand-dark text-brand-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-dark hover:text-brand transition-all w-full sm:w-auto">
+                    View Behance
+                </a>
+            </div>
+            
+            <p class="mt-8 text-sm font-medium opacity-60">Or find me on LinkedIn / Twitter (Add your links here)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-white/10 py-8 px-6 text-center text-gray-500 text-sm">
+        <p>© 2024 Manish Kumar S. Crafted with quirks and caffeine.</p>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
